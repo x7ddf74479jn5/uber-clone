@@ -1,10 +1,17 @@
 import type { VFC } from "react";
+import { UberLogo } from "src/components/model/Uber";
+import { UserProfile } from "src/components/model/User";
+import tw from "tailwind-styled-components";
 
 export const Header: VFC = () => {
   return (
-    <header>
-      <h1>Title</h1>
-      <nav></nav>
-    </header>
+    <Wrapper>
+      <UberLogo />
+      <UserProfile />
+    </Wrapper>
   );
 };
+
+const Wrapper = tw.header`
+  flex justify-between items-center
+`;
