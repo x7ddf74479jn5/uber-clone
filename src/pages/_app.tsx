@@ -1,4 +1,5 @@
 import "src/styles/global.css";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 import type { CustomAppProps } from "next/app";
 
